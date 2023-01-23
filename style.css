@@ -1,0 +1,179 @@
+.bg-main {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+  background-color: #ccc;
+}
+.bg-main .container {
+  width: 80%;
+  max-width: 1440px;
+  height: 700px;
+  background-color: hsl(30, 38%, 92%);
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 1024px) {
+  .bg-main .container {
+    max-width: 400px;
+    height: 650px;
+  }
+}
+.bg-main .container .card {
+  display: flex;
+  width: 90%;
+  height: 60%;
+  max-width: 600px;
+  max-height: 900px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 1024px) {
+  .bg-main .container .card {
+    top: 47%;
+  }
+}
+.bg-main .container .card .card-img-mobile {
+  display: none;
+}
+@media screen and (max-width: 1024px) {
+  .bg-main .container .card .card-img-mobile img {
+    width: 100%;
+    height: 90%;
+    border-top-left-radius: 10px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .bg-main .container .card .card-img-mobile {
+    display: inline-block;
+    height: 300px;
+    margin-bottom: -25px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .bg-main .container .card {
+    flex-direction: column;
+    width: 90%;
+    height: 90%;
+  }
+}
+.bg-main .container .card .card-img-desktop {
+  position: relative;
+  height: 100%;
+  width: 100%;
+}
+@media screen and (max-width: 1024px) {
+  .bg-main .container .card .card-img-desktop {
+    display: none;
+  }
+}
+.bg-main .container .card .card-img-desktop img {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
+}
+.bg-main .container .card .text-card {
+  width: 100%;
+  height: 100%;
+  background-color: hsl(0, 0%, 100%);
+  border-bottom-right-radius: 15px;
+  border-top-right-radius: 15px;
+}
+@media screen and (max-width: 1024px) {
+  .bg-main .container .card .text-card {
+    margin-bottom: 20px;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 0;
+  }
+}
+.bg-main .container .card .text-card .container-text-card {
+  text-align: justify;
+  margin: 30px 20px 20px 30px;
+}
+.bg-main .container .card .text-card .container-text-card .tittle-perfume {
+  margin-bottom: 25px;
+}
+.bg-main .container .card .text-card .container-text-card .tittle-perfume p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  color: hsl(228, 12%, 48%);
+}
+.bg-main .container .card .text-card .tittle-after-perfume {
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+.bg-main .container .card .text-card .tittle-after-perfume h1 {
+  text-align: start;
+  font-size: 30px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+.bg-main .container .card .text-card .paragraphy {
+  padding-right: 10px;
+  margin-bottom: 20px;
+}
+.bg-main .container .card .text-card .paragraphy p {
+  text-align: left;
+  line-height: 20px;
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+.bg-main .container .card .text-card .price {
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+.bg-main .container .card .text-card .price h1 {
+  color: green;
+  font-size: 25px;
+  text-align: left;
+  display: inline-block;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+.bg-main .container .card .text-card .price .line {
+  float: right;
+  border-bottom: 1px solid black;
+  width: 45px;
+  margin-right: 50px;
+}
+.bg-main .container .card .text-card .price .line h2 {
+  position: relative;
+  top: 7.5px;
+  font-size: 14px;
+  color: hsl(228, 12%, 48%);
+}
+.bg-main .container .card .text-card .cart {
+  width: 100%;
+}
+.bg-main .container .card .text-card .cart button {
+  width: 100%;
+  height: 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: green;
+  cursor: pointer;
+}
+.bg-main .container .card .text-card .cart button:hover {
+ background-color: rgb(2, 85, 2);
+}
+.bg-main .container .card .text-card .cart span {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+.bg-main .container .card .text-card .cart span:nth-of-type(2) {
+  color: white;
+  position: relative;
+  bottom: 2.5px;
+  margin-left: 5px;
+}
